@@ -1,0 +1,2 @@
+[ 2022-04-21T10:50:04  WARNING ] AzureCliCredential.get_token failed: Please run 'az login' to set up an account
+[ 2022-04-21T10:50:04     INFO ] please use az to login before running this script.

@@ -1,0 +1,1 @@
+[ 2022-04-21T12:54:21     INFO ] [ resource_group_exists    0.5921s ] True

@@ -1,0 +1,1 @@
+[ 2022-04-25T17:07:03     INFO ] logging to applications insights

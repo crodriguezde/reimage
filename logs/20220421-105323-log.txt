@@ -1,0 +1,2 @@
+[ 2022-04-21T10:53:25     INFO ] [ resource_group_exists    1.7544s ] True
+[ 2022-04-21T10:53:26     INFO ] [ resource_group_get       0.5419s ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageTestSOUTHCENTRALUS', 'name': 'VMSSReImageTestSOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7f3f2a8194f0>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}

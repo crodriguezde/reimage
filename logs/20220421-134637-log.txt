@@ -1,0 +1,3 @@
+[ 2022-04-21T13:46:37     INFO ] logging to applications insights
+[ 2022-04-21T13:46:44     INFO ] [ resource_group_exists    ] True
+[ 2022-04-21T13:46:52  WARNING ] Error when sending request Object of type function is not JSON serializable. Dropping telemetry.

@@ -1,0 +1,1 @@
+[ 2022-04-21T10:47:59  WARNING ] AzureCliCredential.get_token failed: Please run 'az login' to set up an account

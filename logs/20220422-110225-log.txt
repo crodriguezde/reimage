@@ -1,0 +1,310 @@
+[ 2022-04-22T11:02:26     INFO ] logging to applications insights
+[ 2022-04-22T11:02:26    DEBUG ] Starting new HTTP connection (1): 169.254.169.254:80
+[ 2022-04-22T11:02:31    DEBUG ] Starting new HTTPS connection (1): westus-0.in.applicationinsights.azure.com:443
+[ 2022-04-22T11:02:31    DEBUG ] https://westus-0.in.applicationinsights.azure.com:443 "POST //v2.1/track HTTP/1.1" 200 49
+[ 2022-04-22T11:02:32     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:32    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:32     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourcegroups/VMSSReImageRun1SOUTHCENTRALUS?api-version=REDACTED'
+Request method: 'HEAD'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9df9cb50-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-resource/21.0.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:32    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:32    DEBUG ] https://management.azure.com:443 "HEAD /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourcegroups/VMSSReImageRun1SOUTHCENTRALUS?api-version=2021-04-01 HTTP/1.1" 204 0
+[ 2022-04-22T11:02:32     INFO ] Response status: 204
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '0'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-subscription-reads': '11999'
+    'x-ms-request-id': '45986044-9f26-493c-ade4-997685593c7e'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:32 GMT'
+[ 2022-04-22T11:02:32     INFO ] [ resource_group_exists    ] True
+[ 2022-04-22T11:02:33     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:33    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:33     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourcegroups/VMSSReImageRun1SOUTHCENTRALUS?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9e5b3b24-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-resource/21.0.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:33    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:33    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourcegroups/VMSSReImageRun1SOUTHCENTRALUS?api-version=2021-04-01 HTTP/1.1" 200 307
+[ 2022-04-22T11:02:33     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'Vary': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '11994'
+    'x-ms-request-id': '5a16c813-8352-421c-8c59-77a433c41880'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:32 GMT'
+    'Content-Length': '307'
+[ 2022-04-22T11:02:33     INFO ] [ resource_group_get       ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS', 'name': 'VMSSReImageRun1SOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7f723e33b970>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}
+[ 2022-04-22T11:02:33     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:33    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:33     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/VMSSReImageRun1SOUTHCENTRALUSstore?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9ece1dce-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-storage/20.0.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:33    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:33    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/VMSSReImageRun1SOUTHCENTRALUSstore?api-version=2021-09-01 HTTP/1.1" 404 269
+[ 2022-04-22T11:02:33     INFO ] Response status: 404
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-failure-cause': 'REDACTED'
+    'x-ms-request-id': '53273e73-e341-47a8-8f5d-b7e2b64c4a84'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:33 GMT'
+    'Content-Length': '269'
+[ 2022-04-22T11:02:34     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:34    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:34     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/vmsspipeline9fc2a6bc?api-version=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '84'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9f267366-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-storage/20.0.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[ 2022-04-22T11:02:34    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:35    DEBUG ] https://management.azure.com:443 "PUT /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/vmsspipeline9fc2a6bc?api-version=2021-09-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:35     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'Vary': 'REDACTED'
+    'x-ms-request-id': '69a3fe7a-c198-4862-89a9-dd71c6fc741e'
+    'Strict-Transport-Security': 'REDACTED'
+    'Server': 'Microsoft-Azure-Storage-Resource-Provider/1.0,Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-writes': '1199'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:34 GMT'
+[ 2022-04-22T11:02:35     INFO ] [ storage_account_create   ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/vmsspipeline9fc2a6bc', 'name': 'vmsspipeline9fc2a6bc', 'type': 'Microsoft.Storage/storageAccounts', 'tags': {'confidentiality': 'public'}, 'location': 'southcentralus', 'sku': <azure.mgmt.storage.v2021_09_01.models._models_py3.Sku object at 0x7f723e174910>, 'kind': 'StorageV2', 'identity': None, 'extended_location': None, 'provisioning_state': 'Succeeded', 'primary_endpoints': <azure.mgmt.storage.v2021_09_01.models._models_py3.Endpoints object at 0x7f723e174b20>, 'primary_location': 'southcentralus', 'status_of_primary': 'available', 'last_geo_failover_time': None, 'secondary_location': None, 'status_of_secondary': None, 'creation_time': datetime.datetime(2022, 4, 22, 15, 34, 59, 798830, tzinfo=<isodate.tzinfo.Utc object at 0x7f724124aa00>), 'custom_domain': None, 'sas_policy': None, 'key_policy': None, 'key_creation_time': <azure.mgmt.storage.v2021_09_01.models._models_py3.KeyCreationTime object at 0x7f723e174d30>, 'secondary_endpoints': None, 'encryption': <azure.mgmt.storage.v2021_09_01.models._models_py3.Encryption object at 0x7f723e174e50>, 'access_tier': 'Hot', 'azure_files_identity_based_authentication': None, 'enable_https_traffic_only': True, 'network_rule_set': <azure.mgmt.storage.v2021_09_01.models._models_py3.NetworkRuleSet object at 0x7f723e174ee0>, 'is_sftp_enabled': None, 'is_local_user_enabled': None, 'is_hns_enabled': None, 'geo_replication_stats': None, 'failover_in_progress': None, 'large_file_shares_state': None, 'private_endpoint_connections': [], 'routing_preference': None, 'blob_restore_status': None, 'allow_blob_public_access': True, 'minimum_tls_version': 'TLS1_0', 'allow_shared_key_access': None, 'enable_nfs_v3': None, 'allow_cross_tenant_replication': None, 'default_to_o_auth_authentication': None, 'public_network_access': None, 'immutable_storage_with_versioning': None, 'allowed_copy_scope': None, 'storage_account_sku_conversion_status': None, 'dns_endpoint_type': None}
+[ 2022-04-22T11:02:35     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:35    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:35     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/networkSecurityGroups/vmssPipeline-nsg?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '9fe795dc-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:35    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:35    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/networkSecurityGroups/vmssPipeline-nsg?api-version=2021-05-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:35     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'ETag': 'W/"65e447de-d533-4f57-ab36-f9b4e671826b"'
+    'Vary': 'REDACTED'
+    'x-ms-request-id': 'c7ec6abb-5e4b-4a2e-abe1-7ba936f6f7dc'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-reads': '11999'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:35 GMT'
+[ 2022-04-22T11:02:35     INFO ] [ network_security_group_get ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/networkSecurityGroups/vmssPipeline-nsg', 'name': 'vmssPipeline-nsg', 'type': 'Microsoft.Network/networkSecurityGroups', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'etag': 'W/"65e447de-d533-4f57-ab36-f9b4e671826b"', 'security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723db3cd30>], 'default_security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723db3cfa0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723dad0040>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723dad0070>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723dad00a0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723dad00d0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f723dad0100>], 'network_interfaces': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7f723dad0130>], 'flow_logs': None, 'resource_guid': 'af4c3909-dbe7-422c-8fa1-0cb901c4ca5d', 'provisioning_state': 'Succeeded'}
+[ 2022-04-22T11:02:36     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:36    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:36     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPipeline-vnet?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a04dc546-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:36    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:36    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPipeline-vnet?api-version=2021-05-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:36     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'ETag': 'W/"c610338b-5d70-48e6-9158-1e63ed550f97"'
+    'Vary': 'REDACTED'
+    'x-ms-request-id': '31f366f2-47d6-40a5-807e-b4ab77ae0435'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-reads': '11996'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:36 GMT'
+[ 2022-04-22T11:02:36     INFO ] [ vnet_get                 ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPipeline-vnet', 'name': 'vmssPipeline-vnet', 'type': 'Microsoft.Network/virtualNetworks', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'extended_location': None, 'etag': 'W/"c610338b-5d70-48e6-9158-1e63ed550f97"', 'address_space': <azure.mgmt.network.v2021_05_01.models._models_py3.AddressSpace object at 0x7f723dad0340>, 'dhcp_options': None, 'flow_timeout_in_minutes': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7f723dad0490>], 'virtual_network_peerings': [], 'resource_guid': '318a64fa-0acc-44bd-9d37-daae0dbca357', 'provisioning_state': 'Succeeded', 'enable_ddos_protection': False, 'enable_vm_protection': None, 'ddos_protection_plan': None, 'bgp_communities': None, 'encryption': None, 'ip_allocations': None}
+[ 2022-04-22T11:02:36     INFO ] [ subnets_list             ] <iterator object azure.core.paging.ItemPaged at 0x7f723db3cee0>
+[ 2022-04-22T11:02:36     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:36    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:36     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPipeline-vnet/subnets?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a0ab5d78-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-network/19.3.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:36    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:37    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPipeline-vnet/subnets?api-version=2021-05-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:37     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'Vary': 'REDACTED'
+    'x-ms-request-id': 'a4441935-8425-4240-86cb-e18d1862e727'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-reads': '11998'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:37 GMT'
+[ 2022-04-22T11:02:37     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:37    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:37     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a10b264a-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/26.1.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:37    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:37    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline?api-version=2021-11-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:37     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'Vary': 'REDACTED'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/GetVMScaleSet3Min;198,Microsoft.Compute/GetVMScaleSet30Min;1269'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'd0b2318b-1f2c-472d-aec3-454dd2081866'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-reads': '11999'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:36 GMT'
+[ 2022-04-22T11:02:37     INFO ] [ vmss_get                 ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline', 'name': 'vmssPipeline', 'type': 'Microsoft.Compute/virtualMachineScaleSets', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'sku': <azure.mgmt.compute.v2021_11_01.models._models_py3.Sku object at 0x7f723d813760>, 'plan': None, 'identity': None, 'zones': ['1'], 'extended_location': None, 'upgrade_policy': None, 'automatic_repairs_policy': None, 'virtual_machine_profile': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineScaleSetVMProfile object at 0x7f723d825070>, 'provisioning_state': 'Succeeded', 'overprovision': None, 'do_not_run_extensions_on_overprovisioned_v_ms': None, 'unique_id': '96b98604-e9cf-48e1-9f68-c84044fff78c', 'single_placement_group': False, 'zone_balance': None, 'platform_fault_domain_count': 1, 'proximity_placement_group': None, 'host_group': None, 'additional_capabilities': None, 'scale_in_policy': None, 'orchestration_mode': 'Flexible', 'spot_restore_policy': None, 'time_created': datetime.datetime(2022, 4, 22, 15, 35, 32, 553903, tzinfo=<FixedOffset '+00:00'>)}
+[ 2022-04-22T11:02:37     INFO ] [ vmss_get_vms             ] <iterator object azure.core.paging.ItemPaged at 0x7f723d813910>
+[ 2022-04-22T11:02:38     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:38    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:38     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline/virtualMachines?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'a167cdfa-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/26.1.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+[ 2022-04-22T11:02:38    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:38    DEBUG ] https://management.azure.com:443 "GET /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline/virtualMachines?api-version=2021-11-01 HTTP/1.1" 200 None
+[ 2022-04-22T11:02:38     INFO ] Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Transfer-Encoding': 'chunked'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Content-Encoding': 'REDACTED'
+    'Expires': '-1'
+    'Vary': 'REDACTED'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/HighCostGetVMScaleSet3Min;176,Microsoft.Compute/HighCostGetVMScaleSet30Min;878,Microsoft.Compute/VMScaleSetVMViews3Min;4989'
+    'x-ms-request-charge': '5'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '35ac947f-6eda-46e9-b93d-a70c97d6e893'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-reads': '11999'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:38 GMT'
+[ 2022-04-22T11:02:38     INFO ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline/virtualMachines/vmssPipeline_1f811c5d', 'name': 'vmssPipeline_1f811c5d', 'type': 'Microsoft.Compute/virtualMachineScaleSets/virtualMachines', 'location': 'southcentralus', 'tags': None, 'instance_id': None, 'sku': None, 'plan': None, 'resources': None, 'zones': ['1'], 'latest_model_applied': None, 'vm_id': None, 'instance_view': None, 'hardware_profile': None, 'storage_profile': None, 'additional_capabilities': None, 'os_profile': None, 'security_profile': None, 'network_profile': None, 'network_profile_configuration': None, 'diagnostics_profile': None, 'availability_set': None, 'provisioning_state': None, 'license_type': None, 'model_definition_applied': None, 'protection_policy': None, 'user_data': None}
+[ 2022-04-22T11:02:38     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-22T11:02:38    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-22T11:02:38     INFO ] Request URL: 'https://management.azure.com/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline/virtualMachines/%2Fsubscriptions%2Fb698965a-1f53-45ec-8b81-58458d1b25f7%2FresourceGroups%2FVMSSReImageRun1SOUTHCENTRALUS%2Fproviders%2FMicrosoft.Compute%2FvirtualMachineScaleSets%2FvmssPipeline%2FvirtualMachines%2FvmssPipeline_1f811c5d/runCommands/getSubFG?api-version=REDACTED'
+Request method: 'PUT'
+Request headers:
+    'Content-Type': 'application/json'
+    'Content-Length': '64'
+    'Accept': 'application/json, text/json'
+    'x-ms-client-request-id': 'a1c87e8e-c255-11ec-819e-00155d785913'
+    'User-Agent': 'azsdk-python-azure-mgmt-compute/26.1.0 Python/3.8.10 (Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29)'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[ 2022-04-22T11:02:38    DEBUG ] Starting new HTTPS connection (1): management.azure.com:443
+[ 2022-04-22T11:02:39    DEBUG ] https://management.azure.com:443 "PUT /subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPipeline/virtualMachines/%2Fsubscriptions%2Fb698965a-1f53-45ec-8b81-58458d1b25f7%2FresourceGroups%2FVMSSReImageRun1SOUTHCENTRALUS%2Fproviders%2FMicrosoft.Compute%2FvirtualMachineScaleSets%2FvmssPipeline%2FvirtualMachines%2FvmssPipeline_1f811c5d/runCommands/getSubFG?api-version=2021-11-01 HTTP/1.1" 400 175
+[ 2022-04-22T11:02:39     INFO ] Response status: 400
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '175'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '8ea45d5f-8109-4af7-b7d2-6a1dc2e8a6d3'
+    'Server': 'Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0'
+    'x-ms-ratelimit-remaining-subscription-writes': '1199'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Date': 'Fri, 22 Apr 2022 16:02:38 GMT'
+[ 2022-04-22T11:02:39    DEBUG ] Starting new HTTPS connection (1): dc.services.visualstudio.com:443
+[ 2022-04-22T11:02:39    DEBUG ] https://dc.services.visualstudio.com:443 "POST /v2.1/track HTTP/1.1" 307 12321
+[ 2022-04-22T11:02:39    DEBUG ] Starting new HTTPS connection (1): southcentralus-3.in.applicationinsights.azure.com:443
+[ 2022-04-22T11:02:39    DEBUG ] https://southcentralus-3.in.applicationinsights.azure.com:443 "POST /v2.1/track HTTP/1.1" 200 51
+[ 2022-04-22T11:02:39  WARNING ] Can't flush <AzureLogHandler (NOTSET)>, worker thread is dead. Any pending messages will be lost.

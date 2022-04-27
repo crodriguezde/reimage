@@ -1,0 +1,2 @@
+[ 2022-04-25T18:01:52     INFO ] logging to applications insights
+[ 2022-04-25T18:02:00     INFO ] [ exists                   ] True

@@ -1,0 +1,2 @@
+[ 2022-04-22T09:57:51     INFO ] logging to applications insights
+[ 2022-04-22T09:57:59  WARNING ] AzureCliCredential.get_token failed: Please run 'az login' to set up an account

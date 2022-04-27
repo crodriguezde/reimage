@@ -1,0 +1,4 @@
+[ 2022-04-25T18:13:06     INFO ] logging to applications insights
+[ 2022-04-25T18:13:13     INFO ] [ exists                   ] True
+[ 2022-04-25T18:13:14     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS', 'name': 'VMSSReImageRun1SOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7f50184f1220>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}
+[ 2022-04-25T18:13:15     INFO ] Exit per user request

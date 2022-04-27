@@ -1,0 +1,110 @@
+[ 2022-04-26T11:42:47     INFO ] logging to applications insights
+[ 2022-04-26T11:42:54     INFO ] [ exists                   ] True
+[ 2022-04-26T11:42:54     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS', 'name': 'VMSSReImageRun1SOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7f96742ab700>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}
+[ 2022-04-26T11:42:56     INFO ] [ create                   ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/vmsspipeline9fc2a6bc', 'name': 'vmsspipeline9fc2a6bc', 'type': 'Microsoft.Storage/storageAccounts', 'tags': {'confidentiality': 'public'}, 'location': 'southcentralus', 'sku': <azure.mgmt.storage.v2021_09_01.models._models_py3.Sku object at 0x7f96740da400>, 'kind': 'StorageV2', 'identity': None, 'extended_location': None, 'provisioning_state': 'Succeeded', 'primary_endpoints': <azure.mgmt.storage.v2021_09_01.models._models_py3.Endpoints object at 0x7f96740da460>, 'primary_location': 'southcentralus', 'status_of_primary': 'available', 'last_geo_failover_time': None, 'secondary_location': None, 'status_of_secondary': None, 'creation_time': datetime.datetime(2022, 4, 26, 16, 3, 34, 184382, tzinfo=<isodate.tzinfo.Utc object at 0x7f96765a21c0>), 'custom_domain': None, 'sas_policy': None, 'key_policy': None, 'key_creation_time': <azure.mgmt.storage.v2021_09_01.models._models_py3.KeyCreationTime object at 0x7f96740da220>, 'secondary_endpoints': None, 'encryption': <azure.mgmt.storage.v2021_09_01.models._models_py3.Encryption object at 0x7f96740da9a0>, 'access_tier': 'Hot', 'azure_files_identity_based_authentication': None, 'enable_https_traffic_only': True, 'network_rule_set': <azure.mgmt.storage.v2021_09_01.models._models_py3.NetworkRuleSet object at 0x7f96740da580>, 'is_sftp_enabled': None, 'is_local_user_enabled': None, 'is_hns_enabled': None, 'geo_replication_stats': None, 'failover_in_progress': None, 'large_file_shares_state': None, 'private_endpoint_connections': [], 'routing_preference': None, 'blob_restore_status': None, 'allow_blob_public_access': True, 'minimum_tls_version': 'TLS1_0', 'allow_shared_key_access': None, 'enable_nfs_v3': None, 'allow_cross_tenant_replication': None, 'default_to_o_auth_authentication': None, 'public_network_access': None, 'immutable_storage_with_versioning': None, 'allowed_copy_scope': None, 'storage_account_sku_conversion_status': None, 'dns_endpoint_type': None}
+[ 2022-04-26T11:42:56     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/networkSecurityGroups/vmssPeregrineTest-nsg', 'name': 'vmssPeregrineTest-nsg', 'type': 'Microsoft.Network/networkSecurityGroups', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'etag': 'W/"032dcc53-bfb9-4cda-95f8-9d8fe45e7237"', 'security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e290580>], 'default_security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e290460>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e2906a0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e2906d0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e290700>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e290730>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7f966e290760>], 'network_interfaces': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7f966e2907c0>], 'flow_logs': None, 'resource_guid': '203bc10e-1f08-45fe-8574-0dda31091c3d', 'provisioning_state': 'Succeeded'}
+[ 2022-04-26T11:42:57     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPeregrineTest-vnet', 'name': 'vmssPeregrineTest-vnet', 'type': 'Microsoft.Network/virtualNetworks', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'extended_location': None, 'etag': 'W/"afdc11b6-3c43-4b31-b872-581f5fe7295f"', 'address_space': <azure.mgmt.network.v2021_05_01.models._models_py3.AddressSpace object at 0x7f966e290910>, 'dhcp_options': None, 'flow_timeout_in_minutes': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7f967414f760>], 'virtual_network_peerings': [], 'resource_guid': 'f9c58b12-e959-47a6-90a3-d01f242a9657', 'provisioning_state': 'Succeeded', 'enable_ddos_protection': False, 'enable_vm_protection': None, 'ddos_protection_plan': None, 'bgp_communities': None, 'encryption': None, 'ip_allocations': None}
+[ 2022-04-26T11:42:57     INFO ] [ subnets_list             ] <iterator object azure.core.paging.ItemPaged at 0x7f967414f280>
+[ 2022-04-26T11:42:58     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPeregrineTest', 'name': 'vmssPeregrineTest', 'type': 'Microsoft.Compute/virtualMachineScaleSets', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'sku': <azure.mgmt.compute.v2021_11_01.models._models_py3.Sku object at 0x7f966df6dfa0>, 'plan': None, 'identity': None, 'zones': ['1'], 'extended_location': None, 'upgrade_policy': None, 'automatic_repairs_policy': None, 'virtual_machine_profile': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineScaleSetVMProfile object at 0x7f966df7e700>, 'provisioning_state': 'Succeeded', 'overprovision': None, 'do_not_run_extensions_on_overprovisioned_v_ms': None, 'unique_id': '8348e0b6-fe44-4f7e-81b3-a0dbaa7dfc36', 'single_placement_group': False, 'zone_balance': None, 'platform_fault_domain_count': 1, 'proximity_placement_group': None, 'host_group': None, 'additional_capabilities': None, 'scale_in_policy': None, 'orchestration_mode': 'Flexible', 'spot_restore_policy': None, 'time_created': datetime.datetime(2022, 4, 26, 16, 26, 1, 84949, tzinfo=<FixedOffset '+00:00'>)}
+[ 2022-04-26T11:42:58     INFO ] [ get_vms                  ] <iterator object azure.core.paging.ItemPaged at 0x7f966df6d940>
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_01b507e0
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_02bc0230
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_0db65674
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_0ef03d49
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_125b0fa1
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_13561ad1
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_140cde2a
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_1b2dea2f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_25103b0c
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_289ef629
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_2997ef4f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_2d0a95a1
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_2d22971f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_2d7afe4f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_2ed335eb
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_30caad73
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_32390649
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_343aa3a2
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_3528057b
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_361fac27
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_37882ff6
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_384744ac
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_393920bd
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_3962e672
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_3cda1590
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_3d56ff16
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_43e240cf
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_44811dc0
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_45adbcff
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_462d7bbd
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_4720b600
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_4c52185e
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_522af11d
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_52570dd7
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_53c5a9f2
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_563e07a3
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_56a78dbd
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_5d7292f3
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_5de187db
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_5ee758a7
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_62ab84df
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_633e6f1d
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_6396dff3
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_6757cbec
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_67799ec0
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_6a408cc1
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_6e399a2a
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_72c3f448
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_77396561
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_7a82bfcf
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_7bc5373c
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_7bd26ff5
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_7da4d243
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_7f92d9f5
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_80f9b991
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_81bc0b45
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_81ca05e3
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_833e29ec
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_86f3a754
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_89e94a72
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_8c5b3023
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_9a6bfcc9
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_a29c1515
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_a368238b
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_a7dba791
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_a7fa7564
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b0a43f58
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b6480fb3
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b743d2de
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b7f3c247
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b8734810
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_b8e3623b
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_bb556dbe
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_bc8e09da
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_bfce5626
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c0b4e892
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c3250929
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c5e7aa6d
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c727344d
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c7559293
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c8587143
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_c9b23c1a
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_cb16055f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_cb7d2eea
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_cba5edb6
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_cc8b060f
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_ccb84156
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_cd612d34
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_d6d22b3c
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_d79a09c0
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_e05cc8fe
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_e150356b
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_e237d753
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_eb309e29
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_edacd3d9
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_f0886bc4
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_f09e23e9
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_f995b088
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_fc34eb68
+[ 2022-04-26T11:42:59     INFO ] vmssPeregrineTest_fe1e3a99
+[ 2022-04-26T11:42:59     INFO ] found 100 vms

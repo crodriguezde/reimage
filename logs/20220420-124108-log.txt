@@ -1,0 +1,1 @@
+[ 2022-04-20T12:41:18  WARNING ] AzureCliCredential.get_token failed: Failed to invoke the Azure CLI

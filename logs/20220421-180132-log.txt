@@ -1,0 +1,2 @@
+[ 2022-04-21T18:01:32     INFO ] logging to applications insights
+[ 2022-04-21T18:01:39     INFO ] [ resource_group_exists    ] True

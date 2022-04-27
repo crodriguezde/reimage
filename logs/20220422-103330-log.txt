@@ -1,0 +1,2 @@
+[ 2022-04-22T10:33:30     INFO ] logging to applications insights
+[ 2022-04-22T10:33:31     INFO ] Exit per user request

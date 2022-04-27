@@ -1,0 +1,2 @@
+[ 2022-04-22T10:07:11     INFO ] logging to applications insights
+[ 2022-04-22T10:10:34     INFO ] [ delete_resource_group    ] None

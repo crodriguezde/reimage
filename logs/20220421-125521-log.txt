@@ -1,0 +1,2 @@
+[ 2022-04-21T12:55:21     INFO ] None
+[ 2022-04-21T12:55:21     INFO ] logging to applications insights

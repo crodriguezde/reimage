@@ -1,0 +1,5 @@
+[ 2022-04-21T18:08:14     INFO ] logging to applications insights
+[ 2022-04-21T18:08:21     INFO ] [ resource_group_exists    ] False
+[ 2022-04-21T18:08:21     INFO ] [ resource_group_exists    ] False
+[ 2022-04-21T18:08:22     INFO ] [ create_resource_group    ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageTestSOUTHCENTRALUS', 'name': 'VMSSReImageTestSOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7fac88477820>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}
+[ 2022-04-21T18:08:23     INFO ] [ resource_group_get       ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageTestSOUTHCENTRALUS', 'name': 'VMSSReImageTestSOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7fac88477850>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}

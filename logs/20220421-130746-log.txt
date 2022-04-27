@@ -1,0 +1,2 @@
+[ 2022-04-21T13:07:46     INFO ] 2bc81ea8-1af5-4611-ad85-6380e4505872
+[ 2022-04-21T13:07:46     INFO ] logging to applications insights
