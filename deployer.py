@@ -55,10 +55,12 @@ def main():
     url_logger.setLevel(logging.WARNING)
 
     application_insights = os.environ.get('APPLICATIONINSIGHTS_CONNECTION_STRING')
-    if application_insights != "":
-        logging.info("logging to applications insights")
+    try:
         azureLogHandler = AzureLogHandler()
         logger.addHandler(azureLogHandler)
+        logging.info("logging to applications insights")
+    except ValueError:
+        pass
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-g', '--resource_group', help='resource group name', default='VMSSReImageRun1')
@@ -99,7 +101,7 @@ def main():
 
     try:
         if args.delete:
-            resource_group.delete(args) 
+            resource_groups.delete(args) 
             return
 
         if args.create and resource_groups.exists(args):
@@ -126,7 +128,7 @@ def main():
 
             vmss_vms = vmss.get_vms(args)
             
-            imds.get_from_vmss_vms(args)
+            asyncio.run(imds.get_from_vmss_vms(args))
 
 
         except HttpResponseError as ex:
