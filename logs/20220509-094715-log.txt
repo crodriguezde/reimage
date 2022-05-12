@@ -1,0 +1,85 @@
+[ 2022-05-09T09:47:16  WARNING ] AzureCliCredential.get_token failed: ERROR: The command failed with an unexpected error. Here is the traceback:
+ERROR: HTTPSConnectionPool(host='login.microsoftonline.com', port=443): Max retries exceeded with url: /72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0/.well-known/openid-configuration (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fbbddcbc070>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 314, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 171, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x7fbbddcbc070>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 747, in urlopen
+    return self.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='login.microsoftonline.com', port=443): Max retries exceeded with url: /72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0/.well-known/openid-configuration (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fbbddcbc070>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/knack/cli.py", line 231, in invoke
+    cmd_result = self.invocation.execute(args)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/commands/__init__.py", line 658, in execute
+    raise ex
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/commands/__init__.py", line 721, in _run_jobs_serially
+    results.append(self._run_job(expanded_arg, cmd_copy))
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/commands/__init__.py", line 692, in _run_job
+    result = cmd_copy(params)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/commands/__init__.py", line 328, in __call__
+    return self.handler(*args, **kwargs)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/commands/command_operation.py", line 121, in handler
+    return op(**command_args)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/command_modules/profile/custom.py", line 66, in get_access_token
+    creds, subscription, tenant = profile.get_raw_token(subscription=subscription, resource=resource, scopes=scopes,
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/_profile.py", line 383, in get_raw_token
+    credential = self._create_credential(account, tenant)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/_profile.py", line 593, in _create_credential
+    return identity.get_user_credential(username_or_sp_id)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/auth/identity.py", line 203, in get_user_credential
+    return UserCredential(self.client_id, username, **self._msal_app_kwargs)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/azure/cli/core/auth/msal_authentication.py", line 39, in __init__
+    super().__init__(client_id, **kwargs)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/msal/application.py", line 1485, in __init__
+    super(PublicClientApplication, self).__init__(
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/msal/application.py", line 455, in __init__
+    self.authority = Authority(
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/msal/authority.py", line 100, in __init__
+    openid_config = tenant_discovery(
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/msal/authority.py", line 160, in tenant_discovery
+    resp = http_client.get(tenant_discovery_endpoint, **kwargs)
+  File "/home/crodriguezde/.local/lib/python3.8/site-packages/msal/individual_cache.py", line 269, in wrapper
+    value = function(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='login.microsoftonline.com', port=443): Max retries exceeded with url: /72f988bf-86f1-41af-91ab-2d7cd011db47/v2.0/.well-known/openid-configuration (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7fbbddcbc070>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+To open an issue, please run: 'az feedback'
+

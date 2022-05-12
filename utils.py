@@ -2,6 +2,7 @@ import uuid
 import logging
 import time 
 import datetime
+import json
 
 class Decorator:
     def __init__(self):
@@ -13,23 +14,34 @@ class Decorator:
             result = fn(*args, **kwargs)
             end = time.time()
             log_print_time(f'[ {fn.__name__:<24} ] {result}', end-start)
-            #print(f'{fn.__name__} {(end - start):.4f}s')
             return result
         return timer
 
-UUID=uuid.uuid4()
 
-def log_print(str):
-    logging.info(str, extra={
-        'custom_dimensions': {
-            'uuid': f'{UUID}',
+def log_obj(imds):
+    #print(f'DUMP: {imds}')
+    logging.info('imds', extra={
+        'custom_dimensions':{
+            'platformFaultDomain': imds['compute']['platformFaultDomain'],
+            'platformSubFaultDomain': imds['compute']['platformSubFaultDomain'],
+            'platformUpdateDomain': imds['compute']['platformUpdateDomain'],
+            'name': imds['compute']['name'],
+            'location': imds['compute']['location'],
+            'uuid': imds['uuid'],
+            'zone': imds['compute']['zone'],
+            'vmId': imds['compute']['vmId'],
+            'vmScaleSetName': imds['compute']['vmScaleSetName']
         }
-    } )
+    })
+
+
+def log_msg(msg):
+    logging.info(msg)
+
 
 def log_print_time(str, time):
     logging.info(str, extra={
         'custom_dimensions': {
-            'uuid': f'{UUID}',
             'execution_time': f'{time}',
         }
     } )

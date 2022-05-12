@@ -111,3 +111,64 @@
 [ 2022-04-27T20:00:42     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance11W1I0', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7f71ee13c0d0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7f71ee0be760>], 'extensions': None, 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7f71ee0be280>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7f71ee0be130>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7f71ee0be4c0>], 'patch_status': None}
 [ 2022-04-27T20:00:43     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance0ISQ5J', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7f71ee0bedf0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7f71ee0be070>], 'extensions': None, 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7f71ee0bed00>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7f71ee0be700>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7f71ee0be8b0>], 'patch_status': None}
 [ 2022-04-27T20:00:43     INFO ] Finish getting all vms in vmss
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=AttributeError("module 'vm' has no attribute 'name'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 17, in _get
+    instance_vm = _wait_vm_state_running(args, vmss_vm)
+AttributeError: module 'vm' has no attribute 'name'
+[ 2022-04-27T20:02:09     INFO ] Exit per user request

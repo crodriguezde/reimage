@@ -1,0 +1,139 @@
+[ 2022-04-27T20:36:56     INFO ] logging to applications insights
+[ 2022-04-27T20:36:57     INFO ] [ exists                   ] True
+[ 2022-04-27T20:36:58     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS', 'name': 'VMSSReImageRun1SOUTHCENTRALUS', 'type': 'Microsoft.Resources/resourceGroups', 'properties': <azure.mgmt.resource.resources.v2021_04_01.models._models_py3.ResourceGroupProperties object at 0x7fd97cd81400>, 'location': 'southcentralus', 'managed_by': None, 'tags': None}
+[ 2022-04-27T20:37:00     INFO ] [ create                   ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Storage/storageAccounts/vmsspipeline9fc2a6bc', 'name': 'vmsspipeline9fc2a6bc', 'type': 'Microsoft.Storage/storageAccounts', 'tags': {'confidentiality': 'public'}, 'location': 'southcentralus', 'sku': <azure.mgmt.storage.v2021_09_01.models._models_py3.Sku object at 0x7fd97cba0d90>, 'kind': 'StorageV2', 'identity': None, 'extended_location': None, 'provisioning_state': 'Succeeded', 'primary_endpoints': <azure.mgmt.storage.v2021_09_01.models._models_py3.Endpoints object at 0x7fd97cba0af0>, 'primary_location': 'southcentralus', 'status_of_primary': 'available', 'last_geo_failover_time': None, 'secondary_location': None, 'status_of_secondary': None, 'creation_time': datetime.datetime(2022, 4, 26, 16, 3, 34, 184382, tzinfo=<isodate.tzinfo.Utc object at 0x7fd9808b7610>), 'custom_domain': None, 'sas_policy': None, 'key_policy': None, 'key_creation_time': <azure.mgmt.storage.v2021_09_01.models._models_py3.KeyCreationTime object at 0x7fd97cbaf070>, 'secondary_endpoints': None, 'encryption': <azure.mgmt.storage.v2021_09_01.models._models_py3.Encryption object at 0x7fd97cbaf340>, 'access_tier': 'Hot', 'azure_files_identity_based_authentication': None, 'enable_https_traffic_only': True, 'network_rule_set': <azure.mgmt.storage.v2021_09_01.models._models_py3.NetworkRuleSet object at 0x7fd97cbaf5e0>, 'is_sftp_enabled': None, 'is_local_user_enabled': None, 'is_hns_enabled': None, 'geo_replication_stats': None, 'failover_in_progress': None, 'large_file_shares_state': None, 'private_endpoint_connections': [], 'routing_preference': None, 'blob_restore_status': None, 'allow_blob_public_access': True, 'minimum_tls_version': 'TLS1_0', 'allow_shared_key_access': None, 'enable_nfs_v3': None, 'allow_cross_tenant_replication': None, 'default_to_o_auth_authentication': None, 'public_network_access': None, 'immutable_storage_with_versioning': None, 'allowed_copy_scope': None, 'storage_account_sku_conversion_status': None, 'dns_endpoint_type': None}
+[ 2022-04-27T20:37:01     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/networkSecurityGroups/vmssPeregrineTest-nsg', 'name': 'vmssPeregrineTest-nsg', 'type': 'Microsoft.Network/networkSecurityGroups', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'etag': 'W/"032dcc53-bfb9-4cda-95f8-9d8fe45e7237"', 'security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f5160>], 'default_security_rules': [<azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f5070>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f5190>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f51c0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f51f0>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f5220>, <azure.mgmt.network.v2021_05_01.models._models_py3.SecurityRule object at 0x7fd97c4f5250>], 'network_interfaces': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7fd97c4f52b0>], 'flow_logs': None, 'resource_guid': '203bc10e-1f08-45fe-8574-0dda31091c3d', 'provisioning_state': 'Succeeded'}
+[ 2022-04-27T20:37:02     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Network/virtualNetworks/vmssPeregrineTest-vnet', 'name': 'vmssPeregrineTest-vnet', 'type': 'Microsoft.Network/virtualNetworks', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'extended_location': None, 'etag': 'W/"afdc11b6-3c43-4b31-b872-581f5fe7295f"', 'address_space': <azure.mgmt.network.v2021_05_01.models._models_py3.AddressSpace object at 0x7fd97c4f53d0>, 'dhcp_options': None, 'flow_timeout_in_minutes': None, 'subnets': [<azure.mgmt.network.v2021_05_01.models._models_py3.Subnet object at 0x7fd97cba01c0>], 'virtual_network_peerings': [], 'resource_guid': 'f9c58b12-e959-47a6-90a3-d01f242a9657', 'provisioning_state': 'Succeeded', 'enable_ddos_protection': False, 'enable_vm_protection': None, 'ddos_protection_plan': None, 'bgp_communities': None, 'encryption': None, 'ip_allocations': None}
+[ 2022-04-27T20:37:02     INFO ] [ subnets_list             ] <iterator object azure.core.paging.ItemPaged at 0x7fd97c561c70>
+[ 2022-04-27T20:37:04     INFO ] [ get                      ] {'additional_properties': {}, 'id': '/subscriptions/b698965a-1f53-45ec-8b81-58458d1b25f7/resourceGroups/VMSSReImageRun1SOUTHCENTRALUS/providers/Microsoft.Compute/virtualMachineScaleSets/vmssPeregrineTest', 'name': 'vmssPeregrineTest', 'type': 'Microsoft.Compute/virtualMachineScaleSets', 'location': 'southcentralus', 'tags': {'confidentiality': 'public'}, 'sku': <azure.mgmt.compute.v2021_11_01.models._models_py3.Sku object at 0x7fd97c25ad00>, 'plan': None, 'identity': None, 'zones': ['1'], 'extended_location': None, 'upgrade_policy': None, 'automatic_repairs_policy': None, 'virtual_machine_profile': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineScaleSetVMProfile object at 0x7fd97c26b250>, 'provisioning_state': 'Succeeded', 'overprovision': None, 'do_not_run_extensions_on_overprovisioned_v_ms': None, 'unique_id': '8348e0b6-fe44-4f7e-81b3-a0dbaa7dfc36', 'single_placement_group': False, 'zone_balance': None, 'platform_fault_domain_count': 1, 'proximity_placement_group': None, 'host_group': None, 'additional_capabilities': None, 'scale_in_policy': None, 'orchestration_mode': 'Flexible', 'spot_restore_policy': None, 'time_created': datetime.datetime(2022, 4, 26, 16, 26, 1, 84949, tzinfo=<FixedOffset '+00:00'>)}
+[ 2022-04-27T20:37:04     INFO ] [ get_vms                  ] <iterator object azure.core.paging.ItemPaged at 0x7fd97c520970>
+[ 2022-04-27T20:37:04    DEBUG ] Using selector: EpollSelector
+[ 2022-04-27T20:37:04     INFO ] [ get_vms                  ] <iterator object azure.core.paging.ItemPaged at 0x7fd97c26be80>
+[ 2022-04-27T20:37:05     INFO ] Finish queuing all vms
+[ 2022-04-27T20:37:05     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance0H1VQ8', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd97c21c0d0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd97c21c2b0>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd97c21c160>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd97c21c400>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd97c21c430>], 'patch_status': None}
+[ 2022-04-27T20:37:06     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance0RB9YO', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96f400490>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96f400670>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96f400520>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f4007c0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f4007f0>], 'patch_status': None}
+[ 2022-04-27T20:37:07     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance3SYUES', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96f3f40d0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96f3f4730>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96f3f4040>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f3f4100>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f3f44f0>], 'patch_status': None}
+[ 2022-04-27T20:37:08     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance457RRD', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96f3e9f10>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96f40d130>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96f3e9eb0>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f40d2b0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f40d2e0>], 'patch_status': None}
+[ 2022-04-27T20:37:08     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance53CLNL', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96f4114f0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96f4116d0>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96f411580>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f3e94f0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96f3e9340>], 'patch_status': None}
+[ 2022-04-27T20:37:09     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance5D58EP', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96eb9a7c0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96eb9a9a0>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96eb9a850>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96eb9aaf0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96eb9ab20>], 'patch_status': None}
+[ 2022-04-27T20:37:09     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance5K9YCQ', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96eb9fd30>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96eb9ff10>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96eb9fdc0>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96eba80a0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96eba80d0>], 'patch_status': None}
+[ 2022-04-27T20:37:10     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstance7JHJ5B', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96eba8fd0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96ebb1220>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96ebb10d0>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebb1370>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebb13a0>], 'patch_status': None}
+[ 2022-04-27T20:37:10     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstanceAA7RWS', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96ebb55b0>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96ebb5790>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96ebb5640>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebb58e0>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebb5910>], 'patch_status': None}
+[ 2022-04-27T20:37:11     INFO ] [ get                      ] {'additional_properties': {}, 'platform_update_domain': None, 'platform_fault_domain': None, 'computer_name': 'vmInstanceB9R1NT', 'os_name': 'ubuntu', 'os_version': '18.04', 'hyper_v_generation': 'V1', 'rdp_thumb_print': None, 'vm_agent': <azure.mgmt.compute.v2021_11_01.models._models_py3.VirtualMachineAgentInstanceView object at 0x7fd96f411c10>, 'maintenance_redeploy_status': None, 'disks': [<azure.mgmt.compute.v2021_11_01.models._models_py3.DiskInstanceView object at 0x7fd96ebbcac0>], 'extensions': [], 'vm_health': None, 'boot_diagnostics': <azure.mgmt.compute.v2021_11_01.models._models_py3.BootDiagnosticsInstanceView object at 0x7fd96ebbc760>, 'assigned_host': None, 'statuses': [<azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebbcc10>, <azure.mgmt.compute.v2021_11_01.models._models_py3.InstanceViewStatus object at 0x7fd96ebbcc40>], 'patch_status': None}
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:11     INFO ] AzureCliCredential.get_token succeeded
+[ 2022-04-27T20:37:11    DEBUG ] [Authenticated account] Client ID: 04b07795-8ddb-461a-bbee-02f9e1bf7b46. Tenant ID: 72f988bf-86f1-41af-91ab-2d7cd011db47. User Principal Name: crodriguezde@microsoft.com. Object ID (user): ab969cee-6fd6-4809-91a9-6e3e7aafe6c2
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:37:12    DEBUG ] Encoding detection on empty bytes, assuming utf_8 intention.
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<logging_worker() done, defined at /home/crodriguezde/experiments/reimage/imds.py:14> exception=TypeError("object method can't be used in 'await' expression")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 16, in logging_worker
+    msg = await queue.get()
+TypeError: object method can't be used in 'await' expression
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24    ERROR ] Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<_get() done, defined at /home/crodriguezde/experiments/reimage/imds.py:20> exception=AttributeError("'Queue' object has no attribute 'put_noawait'")>
+Traceback (most recent call last):
+  File "/home/crodriguezde/experiments/reimage/imds.py", line 43, in _get
+    log_queue.put_noawait(imds)
+AttributeError: 'Queue' object has no attribute 'put_noawait'
+[ 2022-04-27T20:38:24     INFO ] Exit per user request
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96ebbce20>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f3e7d60>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f3e7130>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f3e7ca0>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f3e7a00>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f3e9220>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96f411fd0>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96eb9fb80>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96eba8490>
+[ 2022-04-27T20:38:24    ERROR ] Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fd96ebb14c0>

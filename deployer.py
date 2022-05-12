@@ -6,6 +6,7 @@ import time
 import os
 from logging import FileHandler
 import asyncio
+import uuid
 
 import nsg
 import storage
@@ -48,11 +49,14 @@ def main():
     az_identity_logger = logging.getLogger("azure.identity._internal.decorators")
     az_identity_logger.setLevel(logging.WARNING)
 
-    az_identity_logger = logging.getLogger("azure.identity._internal.aio.decorators")
+    az_identity_logger = logging.getLogger("azure.identity.aio._internal.decorators")
     az_identity_logger.setLevel(logging.WARNING)
 
     url_logger = logging.getLogger("urllib3.connectionpool")
     url_logger.setLevel(logging.WARNING)
+
+    logging.getLogger('backoff').addHandler(logger)
+    logging.getLogger('backoff').setLevel(logging.ERROR)
 
     application_insights = os.environ.get('APPLICATIONINSIGHTS_CONNECTION_STRING')
     try:
@@ -98,43 +102,47 @@ def main():
     args.storage_name = 'vmsspipeline9fc2a6bc'
 
     args.username = f'azureUser'
-
-    try:
-        if args.delete:
-            resource_groups.delete(args) 
-            return
-
-        if args.create and resource_groups.exists(args):
-            resource_groups.delete(args)
-
-        if not resource_groups.exists(args):
-            resource_groups.create(args)
-
-        rg = resource_groups.get(args)
-
-        #accept_license(args)
-        # Create VMSS 
+    iteration = 0
+    while True:
+        args.uuid = f'{uuid.uuid4()}'
         try:
-            store = storage.get_or_create(args)
+            if args.delete:
+                resource_groups.delete(args) 
+                return
 
-            nsg_obj = nsg.get_or_create(args)
+            if args.create and resource_groups.exists(args):
+                resource_groups.delete(args)
 
-            vnet_obj = vnet.get_or_create(args, nsg_obj)
+            if not resource_groups.exists(args):
+                resource_groups.create(args)
 
-            subnets = vnet.subnets_list(args)
-            first_subnet = next(subnets)
+            rg = resource_groups.get(args)
 
-            vmss_obj = vmss.get_or_create(args, store, first_subnet)
+            #accept_license(args)
+            # Create VMSS 
+            try:
+                store = storage.get_or_create(args)
 
-            vmss_vms = vmss.get_vms(args)
-            
-            asyncio.run(imds.get_from_vmss_vms(args))
+                nsg_obj = nsg.get_or_create(args)
 
+                vnet_obj = vnet.get_or_create(args, nsg_obj)
 
-        except HttpResponseError as ex:
-            print(f'{ex}')
-    except CredentialUnavailableError:
-        return
+                subnets = vnet.subnets_list(args)
+                first_subnet = next(subnets)
+
+                vmss_obj = vmss.get_or_create(args, store, first_subnet)
+
+                vmss_vms = vmss.get_vms(args)
+
+                asyncio.run(imds.get_from_vmss_vms(args))
+
+                iteration += 1
+                logging.info(f'iteration {iteration}')
+                time.sleep(600)
+            except HttpResponseError as ex:
+                print(f'{ex}')
+        except CredentialUnavailableError:
+            return
 
 
 if __name__ == '__main__':
